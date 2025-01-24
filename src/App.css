@@ -1,0 +1,202 @@
+/* General Body Styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif; /* Clean and elegant font */
+  background: linear-gradient(
+    135deg,
+    #000000,
+    #001f3f,
+    #000000
+  ); /* Navy blue gradient */
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+  color: #ffffff; /* Soft white font */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* App Container */
+.App {
+  text-align: center;
+}
+
+/* Login Container */
+.login-container {
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40); /* Smooth gradient */
+  padding: 25px 20px; /* Adjusted padding for consistent spacing */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Enhanced shadow */
+  max-width: 400px; /* Compact width */
+  width: 100%;
+  animation: fade-in 1.5s ease-in-out;
+  color: #ffffff; /* White text inside container */
+}
+
+/* Fade-in Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Campus Image */
+.campus-image {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px; /* Reduced spacing for compact layout */
+  border: 3px solid #ffd700; /* Gold border */
+}
+
+/* Headings */
+h1 {
+  font-size: 2.2em; /* Slightly reduced font size */
+  color: #ffd700; /* Gold for headings */
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1em; /* Compact font size */
+  color: #b3b3b3; /* Softer gray for secondary text */
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+button {
+  background-color: #ffd700; /* Gold button */
+  color: #1e1e2f; /* Navy text for contrast */
+  border: none;
+  padding: 10px 20px; /* Adjusted padding */
+  border-radius: 25px; /* Rounded buttons */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9em; /* Reduced font size */
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+button:hover {
+  background-color: #e6c200; /* Slightly darker gold on hover */
+  transform: scale(1.05); /* Interactive scaling effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+}
+
+/* Status Message */
+.status-message {
+  background-color: #ffd700; /* Gold background */
+  color: #1e1e2f; /* Navy text */
+  padding: 10px; /* Reduced padding */
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 1em; /* Compact font size */
+  font-weight: bold;
+  animation: pop-in 1s ease;
+}
+
+/* Pop-in Animation */
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Labels */
+label {
+  display: block;
+  margin: 8px 0 5px; /* Compact margins for consistency */
+  font-size: 1em; /* Compact label font size */
+  color: #ffffff; /* White text for labels */
+}
+
+/* Inputs and Selects */
+input,
+select {
+  width: 90%; /* Input smaller than the container */
+  padding: 8px; /* Reduced padding */
+  margin-bottom: 12px; /* Adjusted spacing for consistency */
+  border: none;
+  border-radius: 8px;
+  background: #2a2a40; /* Dark gray input background */
+  color: #ffffff; /* White text */
+  font-size: 0.9em; /* Slightly smaller font size */
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: #a9a9a9; /* Subtle placeholder color */
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 8px #ffd700; /* Gold glow on focus */
+  background: #3a3a55; /* Slightly lighter background */
+}
+
+select {
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Dropdown Hover Effect */
+select:hover {
+  background-color: #3a3a55; /* Slight hover effect */
+}
+
+/* Dropdown Arrow */
+select::-ms-expand {
+  display: none; /* Hide default dropdown arrow */
+}
+
+/* Interactive Select Options */
+select option {
+  background: #2a2a40; /* Consistent dropdown background */
+  color: #ffffff; /* White text */
+}
+
+/* Interactive Effects */
+button:active {
+  transform: scale(1.02); /* Slight press effect */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); /* Reduced shadow */
+}
+
+input:hover,
+select:hover {
+  background: #3a3a55; /* Subtle hover effect */
+}
+/* Smooth Transition for Elements */
+.select-wrapper,
+.dynamic-content {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.select-wrapper.show,
+.dynamic-content.show {
+  opacity: 1;
+}
