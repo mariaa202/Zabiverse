@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Zabiverse/static/css/main.d20672fa.css",
+    "main.js": "/Zabiverse/static/js/main.94b8f858.js",
+    "static/js/488.62390b16.chunk.js": "/Zabiverse/static/js/488.62390b16.chunk.js",
+    "index.html": "/Zabiverse/index.html",
+    "main.d20672fa.css.map": "/Zabiverse/static/css/main.d20672fa.css.map",
+    "main.94b8f858.js.map": "/Zabiverse/static/js/main.94b8f858.js.map",
+    "488.62390b16.chunk.js.map": "/Zabiverse/static/js/488.62390b16.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d20672fa.css",
+    "static/js/main.94b8f858.js"
+  ]
+}
