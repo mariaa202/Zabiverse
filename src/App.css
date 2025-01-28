@@ -200,3 +200,47 @@ select:hover {
 .dynamic-content.show {
   opacity: 1;
 }
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #2a2a40;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #ffd700;
+  color: black;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: #444;
+  color: white;
+}
+.webcam-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.webcam {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
